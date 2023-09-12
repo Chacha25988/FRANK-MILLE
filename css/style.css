@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+/*全体の設定*/
+body {
+	margin: 0px;
+	padding: 0px;
+	-webkit-text-size-adjust: none;
+	color: #666;	/*全体の文字色*/
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 16px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #fff;	/*背景色*/
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,select,input,textarea {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+iframe {width: 100%;}
+
+/*リンク設定*/
+a {
+	color: #666;	/*リンクテキストの色*/
+	transition: 0.3s;	/*マウスオン時の移り変わるまでの時間設定。0.3秒。*/
+}
+a:hover {
+	color: #80ad45;	/*マウスオン時の文字色*/
+}
+
+/*コンテナー（ホームページを囲む一番外側のブロック*/
+#container {
+	max-width: 1400px;	/*ブロックの最大幅*/
+	margin: 0 auto;
+	padding: 0 3%;
+}
+
+/*ヘッダー（ロゴが入った最上段のブロック）*/
+/*headerブロック*/
+header {
+	text-align: left;	/*内容を中央よせ*/
+}
+/*ロゴ画像設定*/
+#logo img {
+	width: 50%;	/*画像幅*/
+	height: auto;
+	margin: 20px auto 20px;	/*ロゴの上と下に20pxスペースを空ける設定*/
+}
+
+/*トップページのメイン画像*/
+
+/*画像ブロック*/
+#mainimg img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;	/*角を丸くする指定。*/
+	margin-bottom: 40px;	/*下に空けるスペース*/
+}
+#sabimg img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;	/*角を丸くする指定。*/
+	margin-bottom: 40px;	/*下に空けるスペース*/
+}
+#top img {
+	width: 100%;
+	height: auto;
+}
+
+/*メニュー全体を囲むブロック*/
+#menubar {
+	text-align: center;		/*文字をセンタリング*/
+	font-size: 15px;		/*文字サイズ*/
+	margin-bottom: 40px;	/*下に空けるスペース*/
+}
+/*メニュー１個あたりの設定*/
+#menubar li {
+	display: inline;	/*横並びにする設定*/
+}
+#menubar li a {
+	text-decoration: none;
+	padding: 15px 30px;	/*各メニュー内の余白。上下に15px、左右に30pxあけるという意味。*/
+}
+/*マウスオン時の設定*/
+#menubar li a:hover {
+	color: #80ad45;	/*文字色*/
+	border-bottom: 4px solid #80ad45;	/*下線の幅、線種、色*/
+}
+
+/*コンテンツ（見出しバーや文字などが入っているブロック*/
+/*コンテンツのh2タグの設定*/
+#contents h2 {
+	clear: both;
+	margin-bottom: 20px;
+	color: #fff;		/*文字色*/
+	padding: 10px 20px;	/*上下、左右への余白*/
+	background: #80ad45;	/*背景色*/
+	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+}
+/*コンテンツのh3タグの設定*/
+#contents h3 {
+	clear: both;
+	margin-bottom: 20px;
+	padding: 8px 20px;	/*上下、左右への余白*/
+	background: #fff;	/*背景色*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+}
+/*コンテンツのp(段落)タグ設定*/
+#contents p {
+	padding: 10px 20px 10px;	/*上、左右、下への余白*/
+}
+/*微調整*/
+#contents p + p {
+	margin-top: -5px;
+}
+#contents h2 + p,
+#contents h3 + p {
+	margin-top: -10px;
+}
+#contents section + section {
+	margin-top: 10px;
+}
+
+/*各ブロックごとの設定*/
+.list {
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;	/*下線の幅、線種、色*/
+	padding: 20px;	/*ボックス内の余白*/
+}
+/*h4見出しの設定*/
+.list h4 {
+	text-align: center;
+	font-size: 18px;
+	color: #80ad45;	/*文字色*/
+}
+/*画像の設定*/
+.list img {
+	width: 100%;			/*画像幅*/
+	height: auto;
+	float: left;		/*画像を左に回り込み*/
+	margin-left: 2%	/*画像の右側に空けるスペース*/
+}
+	
+/*段落
+/*段落タグ*/
+.list p {
+	padding: 0 !important;
+}
+
+/*フッター設定*/
+footer {
+	clear: both;
+	text-align: center;	/*文字をセンタリング*/
+	padding: 30px 0px 10px;	/*上、左右、下へのボックス内の余白*/
+}
+footer a {
+	text-decoration: none;
+	border: none;
+}
+footer ul {
+	display: inline;
+	text-align: left;		/*文字をセンタリング*/
+	font-size: 15px;		
+
+}
+
+footer li {
+	padding: 10px 20px;	/*上下、左右への余白*/
+	list-style: none;
+  	margin-left: 20px;	/*画像の左側に空けるスペース*/
+}
+footer h3 {
+	text-align: left;
+}
+
+
+/*トップページ内「ロハスヴィラの強み」ブロック*/
+/*ブロック全体の設定*/
+/*文章の設定*/
+#new p {
+	padding: 10px;		/*ボックス内の余白*/
+	line-height: 1.5;	/*行間*/
+}
+
+/*テーブル*/
+table  {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	border-spacing: 0;
+   }
+   table th {
+	margin: 10px;
+	padding: 10px;
+	background: #778ca3;
+	border: solid 1px #666666;
+	color: #ffffff;
+   }
+   table td {
+	padding: 10px;
+	border: solid 1px #666666;
+   }
+   table td:first-child {
+	background: #e9faf9;
+   }
+
+
+/*その他*/
+.look {background: #e5e5e5;padding: 5px 10px;border-radius: 4px;}
+.mb15,.mb1em {margin-bottom: 15px;}
+.color1 {color: #80ad45;}
+.pr {font-size: 12px;}
+.wl {width: 96%;}
+.ws {width: 50%;}
+.c {text-align: center;}
+.r {text-align: right;}
+.l {text-align: left;}
+
+
+
+/*Q&A*/
+dt {
+    margin-bottom: 0px;
+    color: #333333;
+    font-weight: 600;
+}
+dd {
+    margin: 5px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+/*ギャラリー*/
+img {
+    width: 100%;
+    height: 200px;
+}
+figcaption {
+    padding-top: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+li {   
+    margin: 10px;
+    display: inline-block;
+	
+}
+/*お問い合わせフォーム*/
+.label-title {
+	font-size: 40px;
+	text-align: center;
+	border: solid 3px  #80ad45;
+	 border-radius: 6px;
+	 background:  #80ad45;
+	 color: #fff;
+   }
+	
+	
+	
+   form {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 720px;
+	}
+	
+	
+   .radioinput {
+	text-align: center;
+	}
+	
+	
+   .form-sample {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 15px;
+   }
+	
+   .form-radio {
+	display: flex;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-bottom: 15px;
+	}
+	
+	
+	
+   .radio-label {
+	width: 100%;
+	max-width: 500px;
+	margin-left: 20px;
+   font-size: 18px;
+   }
+	
+	
+   .form-label {
+	width: 100%;
+	max-width: 248px;
+	font-weight: bold;
+	font-size: 19px;
+   }
+	
+   .form-label.last {
+	margin-top: 10px;
+	margin-bottom: auto;
+   }
+	
+   .form-require {
+	border-radius: 5px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 55px;
+	display: inline-block;
+	text-align: center;
+	background: #80ad45;
+	color: #fff;
+	font-size: 15px;
+   }
+	
+   .form-input {
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin-left: 40px;
+	padding-left: 10px;
+	height: 50px;
+	width: 100%;
+	max-width: 410px;
+	font-size: 18px;
+   }
+	
+   .form-textarea {
+	border: 1px solid gray;
+	border-radius: 6px;
+	margin-left: 40px;
+	padding-left: 1em;
+	padding-right: 1em;
+	height: 216px;
+	flex: 1;
+	width: 100%;
+	max-width: 410px;
+	font-size: 18px;
+   }
+	
+   .form-Btn {
+	border-radius: 6px;
+	margin-top: 32px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 280px;
+	display: block;
+	letter-spacing: 0.05em;
+	background: #80ad45;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+   }
+   /*料金*/
+   #Text p {
+	font-size: 14px;
+   }
+
+   /*料金ページの画像*/
+   .flex-box {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: space-between;
+  }
+  
+  .flex-box img {
+	width: 150px;
+	height: 150px;
+  }
+  .flex-box2 {
+	flex-wrap: wrap;
+	text-align: center;
+  }
+  .flex-box2 img{
+	display: flex;
+	width: auto;
+	height: auto;
+	justify-content: space-between;
+  }
+  /**/
+  .ta1 th {
+	width: 100px;
+	padding: 10px;
+  }
+
+  
